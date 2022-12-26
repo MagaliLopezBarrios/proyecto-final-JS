@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-- HEADER --*/
+
+header {
+    height: 50vh;
+    width: 100%;
+
+}
+.logo{
+    width: 250px;
+    position: relative;
+    left: 40%;
+    right: 50%;
+    margin: 10px;
+}
+
+.navBar{
+    display: inline-block;
+    font-size: larger;
+    font-size: 20px;
+    color: black;
+
+}
+
+.ulPrincipalItem{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.ulSecundarioItem{
+    display: inline-block;
+}
+.ulPrincipal{
+    position:relative;
+    left: 150px;
+    bottom: 5px;
+    
+    
+}
+
+.ulSecundario{
+    position: relative;
+    left: 900px;
+    bottom: 60px;
+}
+
+.botonInicio{
+    position: relative;
+    left:900px ;
+    bottom: 30px;
+}
+
+
+/*-- MAIN INDEX --*/
+
+.ideaTituloCel{
+    font-size: 30px;
+    margin: 100px;
+}
+
+.ideaGeneral p{
+    font-size:30px;
+    margin: 50px;
+}
+
+.beneficios{
+    font-size: 20px;
+    margin: 45px;
+}
+
+.pasos{
+    font-size: 20px;
+    margin: 45px;
+
+}
+
+/*-- MAIN INVITACIONES --*/
+
+/*-- main boda --*/
+.galeriaBodas div img{
+    
+    width: 500px;
+    height: 350px;
+
+    background-size: cover;
+    border: 1px solid gray;
+    padding: 30px;
+    margin: 50px;
+    align-content: center;
+}
+
+/*-- FOOTER --*/
+
+footer{
+    margin: 45px;
+}
+
+.logoFooter{
+    width:150px ;
+    position: relative;
+}
+.redes img{
+    width: 100px;
+    position: relative;
+}
+
+.nosotros ul li{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 20px;
+
+}
