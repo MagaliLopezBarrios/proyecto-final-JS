@@ -8,36 +8,48 @@
 /*-- HEADER --*/
 
 header {
-    height: 50vh;
-    width: 100%;
+    background-color:#1413141c ;
+    height: 30vh
+    
 
 }
+
 .logo{
-    width: 250px;
+    width: 200px;
     position: relative;
     left: 40%;
     right: 50%;
-    margin: 10px;
+
 }
 
 .navBar{
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
     font-size: larger;
     font-size: 20px;
     color: black;
+    text-decoration: none;
+    list-style: none;
 
+}
+
+.navBar ul li a{
+    text-decoration: none;
 }
 
 .ulPrincipalItem{
     display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
 }
 
 .ulSecundarioItem{
     display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
 }
 .ulPrincipal{
-    position:relative;
+    position: relative;
     left: 150px;
     bottom: 5px;
     
@@ -45,9 +57,14 @@ header {
 }
 
 .ulSecundario{
-    position: relative;
-    left: 900px;
-    bottom: 60px;
+    display: flex;
+    justify-content: center;
+
+    /*position: relative;
+    left: 300px; */
+    bottom: 70px;
+    margin-right:  50px;
+
 }
 
 .botonInicio{
@@ -83,30 +100,48 @@ header {
 /*-- MAIN INVITACIONES --*/
 
 /*-- main boda --*/
-.galeriaBodas div img{
-    
-    width: 500px;
-    height: 350px;
 
-    background-size: cover;
-    border: 1px solid gray;
-    padding: 30px;
+.galeriaBodas{
+    font-size:30px;
     margin: 50px;
-    align-content: center;
+
+}
+.galeriaBodas div{
+    width: 20%;
+    margin-top: 20px;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 18rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+}
+
+.card:hover{
+    transform: scale(1.2);
 }
 
 /*-- FOOTER --*/
 
 footer{
-    margin: 45px;
+    margin: 10px;
 }
 
+.pie{
+    
+    background-color:#1413141c ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+    
+}
 .logoFooter{
-    width:150px ;
+    width:200px ;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 .redes img{
-    width: 100px;
+    width: 50px;
     position: relative;
 }
 
@@ -115,5 +150,8 @@ footer{
     color: black;
     list-style: none;
     font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+
 
 }
