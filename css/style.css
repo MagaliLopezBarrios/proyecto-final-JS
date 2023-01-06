@@ -7,8 +7,8 @@
 
 /*-- HEADER --*/
 
-header {
-    background-color:#1413141c ;
+#header{
+    background-color:#1413142c ;
     height: 30vh
     
 
@@ -35,6 +35,8 @@ header {
 
 .navBar ul li a{
     text-decoration: none;
+    list-style: none;
+
 }
 
 .ulPrincipalItem{
@@ -59,23 +61,25 @@ header {
 .ulSecundario{
     display: flex;
     justify-content: center;
-
-    /*position: relative;
-    left: 300px; */
     bottom: 70px;
     margin-right:  50px;
 
 }
 
-.botonInicio{
-    position: relative;
-    left:900px ;
-    bottom: 30px;
+
+/*-- MAIN GENERAL --*/
+ /*--Aplico propiedades generales--*/
+main{
+    margin-top: 30px;
 }
 
 
 /*-- MAIN INDEX --*/
 
+.tituloPpal{
+    display: flex;
+    justify-items: center;
+}
 .ideaTituloCel{
     font-size: 30px;
     margin: 100px;
@@ -97,27 +101,101 @@ header {
 
 }
 
-/*-- MAIN INVITACIONES --*/
 
-/*-- main boda --*/
+/*-- MAIN BODAS --*/
 
-/*.galeriaBodas{
-    font-size:30px;
-    margin: 50px;
-
+.inviBodas{
+    display: flex;
+    justify-content: center;
 }
-.galeriaBodas div{
-    width: 20%;
-    margin-top: 20px;
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 18rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 
-}*/
 
+/*--galeria Bodas--*/
 .card:hover{
     transform: scale(1.2);
+}
+.inviBodas{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/*-- MAIN REGISTRARSE --*/
+.tituloRegistrarse{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/*--formulario de registro--*/
+.formulario{
+    background-color: rgba(241, 100, 100, 0.404);
+    border-radius: 3px;
+    color: rgb(56, 56, 56);
+    padding: 10px;
+    margin: 0 auto;
+    width: 500px;
+}
+.formulario p{
+    margin-top: 10px;
+}   
+
+input{
+    border: 0;
+    outline: none;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.formControl{
+    border: solid 1px #acc;
+    padding: 8px;
+    margin-top: 6px;
+    width: 470px;
+}
+.formControl:focus{
+    border-color: #1413141c;
+}
+
+/*-- MAIN CELEBRACIONES --*/
+.inviCelebraciones{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/*-- MAIN CUMPLEAÑOS --*/
+.inviCumple{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/*-- NOSOTROS --*/
+.tituloNosotros{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/*-- PLANES --*/
+.tituloPlanes{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/*-- SOCIALES --*/
+.inviSociales{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 /*-- FOOTER --*/
@@ -145,7 +223,14 @@ footer{
     position: relative;
 }
 
-.nosotros ul li{
+.redes a{
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.nosotros ul li a{
     text-decoration: none;
     color: black;
     list-style: none;
@@ -153,5 +238,56 @@ footer{
     display: flex;
     align-items: flex-start;
 
+
+}
+
+/*--MEDIA QUERIES--*/
+@media screen and (max-width: 1200px){
+    .ulPrincipal{
+        font-size: 18px;
+        
+    }
+    
+    .ulSecundario{
+        font-size: 18px;
+        margin: 15px;
+    
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .ulSecundario{
+        font-size: 18px;
+        margin: 20px;
+    
+    }
+}
+
+@media screen and (max-width: 830px){
+    .ulPrincipalItem{
+    padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 798px){
+    .navBar{
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .ulSecundario{
+        font-size: 18px;
+        margin: 10px;
+    
+    }
+}
+
+@media screen and (max-width: 762px){
+    .redes img{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
