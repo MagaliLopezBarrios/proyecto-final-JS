@@ -1,0 +1,178 @@
+@charset "UTF-8";
+#header {
+  background-color: #1413142c;
+  height: 30vh logo;
+    height-width: 200px;
+    height-position: relative;
+    height-left: 40%;
+    height-right: 50%; }
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: larger;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  list-style: none; }
+  .navBar .ulPrincipal {
+    position: relative;
+    left: 150px;
+    bottom: 5px; }
+    .navBar .ulPrincipal .ulPrincipalItem {
+      display: inline-block;
+      padding: 0.5rem;
+      text-decoration: none; }
+  .navBar .ulSecundario {
+    display: flex;
+    justify-content: center;
+    bottom: 70px;
+    margin-right: 50px; }
+    .navBar .ulSecundario .ulSecundarioItem {
+      display: inline-block;
+      padding: 1rem;
+      text-decoration: none; }
+  .navBar a {
+    text-decoration: none;
+    list-style: none; }
+
+/*-- MAIN INDEX --*/
+.tituloPpal {
+  display: flex;
+  justify-items: center; }
+
+.ideaTituloCel {
+  font-size: 30px;
+  margin: 100px; }
+
+.ideaGeneral p {
+  font-size: 30px;
+  margin: 50px; }
+  .ideaGeneral p .ideaTituloCel {
+    font-size: 30px;
+    margin: 100px; }
+    .ideaGeneral p .ideaTituloCel .tituloPpal {
+      display: flex;
+      justify-items: center; }
+
+.beneficios {
+  font-size: 20px;
+  margin: 45px; }
+
+.pasos {
+  font-size: 20px;
+  margin: 45px; }
+
+/*-- MAIN BODAS --*/
+.inviBodas {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+/*--galeria Bodas--*/
+.galeriaBodas .card:hover {
+  transform: scale(1.2); }
+
+/*-- MAIN REGISTRARSE --*/
+.tituloRegistrarse {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+/*--formulario de registro--*/
+.formulario {
+  background-color: rgba(241, 100, 100, 0.404);
+  border-radius: 3px;
+  color: #383838;
+  padding: 10px;
+  margin: 0 auto;
+  width: 500px; }
+  .formulario p {
+    margin-top: 10px; }
+  .formulario input {
+    border: 0;
+    outline: none;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center; }
+    .formulario input .formControl {
+      border: solid 1px #acc;
+      padding: 8px;
+      margin-top: 6px;
+      width: 470px; }
+      .formulario input .formControl focus {
+        border-color: #1413141c; }
+
+/*-- MAIN CELEBRACIONES --*/
+.inviCelebraciones {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+/*--galeria Celebraciones--*/
+.galeriaCelebraciones .card:hover {
+  transform: scale(1.2); }
+
+/*-- MAIN CUMPLEAÑOS --*/
+.inviCumple {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+/*--galeria Cumpleaños--*/
+.galeriaCumpleaños .card:hover {
+  transform: scale(1.2); }
+
+/*-- MAIN NOSOTROS --*/
+.tituloNosotros {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+/*-- MAIN PLANES --*/
+.tituloPlanes {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+/*-- MAIN SOCIALES --*/
+.inviSociales {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+/*--galeria sociales--*/
+.galeriaSociales .card:hover {
+  transform: scale(1.2); }
+
+/*-- FOOTER --*/
+.pie {
+  margin: 10px;
+  background-color: #1413141c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center logoFooter;
+    align-items-width: 200px;
+    align-items-position: relative;
+    align-items-display: flex;
+    align-items-flex-wrap: wrap; }
+  .pie .nosotros h3 a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start; }
+  .pie .redes a {
+    text-decoration: none;
+    color: black; }
+    .pie .redes a img {
+      width: 50px;
+      position: relative; }

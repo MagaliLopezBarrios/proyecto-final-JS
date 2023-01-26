@@ -1,0 +1,62 @@
+/*-- FOOTER --*/
+
+.pie{ 
+    margin: $tamanio-px;
+    background-color:$color-pagina ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logoFooter {
+        width: $tamanio-px * 20 ;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nosotros{
+        h3{
+            a{
+                text-decoration: none;
+                color: $color-negro;
+                list-style: none;
+                font-size: $tamanio-px * 2;
+                display: flex;
+                align-items: flex-start;
+                        
+            }
+        }
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                    color: $color-negro;
+                    list-style: none;
+                    font-size: $tamanio-px * 2;
+                    display: flex;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+    .redes{
+        width: 100%;
+        height: auto;
+        h3{
+            font-size: $tamanio-px * 2;
+        }
+        a{
+            width: 100%;
+            height: auto;    
+            text-decoration: none;
+            color: $color-negro;
+                
+            img{
+                width: $tamanio-px * 5;
+                height: auto;
+                position: relative;
+            
+            }
+        }
+    }
+
+}

@@ -1,0 +1,181 @@
+/*-- MAIN INDEX --*/
+
+.tituloPpal{
+    display: flex;
+    justify-items: center;
+}
+.ideaTituloCel{
+    font-size: $tamanio-px * 3;
+    margin: $tamanio-px * 10;
+}
+
+
+.ideaGeneral p{
+    font-size:$tamanio-px * 3;
+    margin: $tamanio-px * 5;
+    .ideaTituloCel{
+        font-size: $tamanio-px * 3;
+        margin: $tamanio-px * 10;
+        .tituloPpal{
+            display: flex;
+            justify-items: center;
+        }
+        
+    }
+    
+}
+
+.beneficios{
+    font-size: $tamanio-px * 2;
+    margin: $tamanio-px * 4.5;
+}
+
+.pasos{
+    font-size: $tamanio-px * 2;
+    margin: $tamanio-px * 4.5;
+
+}
+
+
+/*-- MAIN BODAS --*/
+
+.inviBodas{
+    display: flex;
+    justify-content: center;
+    font-size: $tamanio-px * 4;
+    margin-bottom: $tamanio-px * 2;
+
+}
+
+
+/*--galeria Bodas--*/
+.galeriaBodas{
+    .card{
+        &:hover{
+            transform: scale(1.2);
+        }
+    
+        
+    }
+}
+
+
+/*-- MAIN REGISTRARSE --*/
+.tituloRegistrarse{
+    display: flex;
+    justify-content: center;
+    font-size: $tamanio-px * 4;
+    margin-bottom: $tamanio-px * 2;
+}
+/*--formulario de registro--*/
+.formulario{
+    background-color: rgba(241, 100, 100, 0.404);
+    border-radius: 3px;
+    color: rgb(56, 56, 56);
+    padding: $tamanio-px;
+    margin: 0 auto;
+    width: $tamanio-px * 50;
+    p{
+        margin-top: $tamanio-px;
+    }
+    input{
+        border: 0;
+        outline: none;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        .formControl{
+            border: solid 1px #acc;
+            padding: 8px;
+            margin-top: 6px;
+            width: $tamanio-px * 47;
+            focus{
+                border-color: #1413141c;
+            }
+        }
+        
+    }
+        
+    
+}
+
+
+/*-- MAIN CELEBRACIONES --*/
+.inviCelebraciones{
+    display: flex;
+    justify-content: center;
+    font-size: $tamanio-px * 4;
+    margin-bottom: $tamanio-px * 2;
+}
+/*--galeria Celebraciones--*/
+.galeriaCelebraciones{
+    .card{
+        &:hover{
+            transform: scale(1.2);
+        }
+    
+        
+    }
+}
+
+/*-- MAIN CUMPLEAÑOS --*/
+.inviCumple{
+    display: flex;
+    justify-content: center;
+    font-size: $tamanio-px * 4;
+    margin-bottom: $tamanio-px * 2;
+}
+/*--galeria Cumpleaños--*/
+.galeriaCumpleaños{
+    .card{
+        &:hover{
+            transform: scale(1.2);
+        }
+    
+        
+    }
+}
+
+/*-- MAIN NOSOTROS --*/
+.tituloNosotros{
+    display: flex;
+    justify-content: center;
+    font-size: $tamanio-px * 4;
+    margin-bottom: $tamanio-px * 2;
+}
+
+/*-- MAIN PLANES --*/
+.tituloPlanes{
+    display: flex;
+    justify-content: center;
+    font-size: $tamanio-px * 4;
+    margin-bottom: $tamanio-px * 2;
+}
+/*.tiposPlanes{
+    ul{
+        h2{
+
+        }
+        li{
+
+        }
+    }
+}*/
+/*-- MAIN SOCIALES --*/
+.inviSociales{
+    display: flex;
+    justify-content: center;
+    font-size: $tamanio-px * 4;
+    margin-bottom: $tamanio-px * 2;
+}
+
+/*--galeria sociales--*/
+.galeriaSociales{
+    .card{
+        &:hover{
+            transform: scale(1.2);
+        }
+    
+        
+    }
+}

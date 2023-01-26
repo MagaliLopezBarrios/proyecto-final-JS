@@ -1,0 +1,55 @@
+#header{
+    background-color: $color-pagina ;
+    height: 30vh
+}
+    .logo{
+        width: 200px;
+        position: relative;
+        left: 40%;
+        right: 50%;
+    }
+        
+    .navBar {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: larger;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        list-style: none;
+        .ulPrincipal{
+            position: relative;
+            left: 150px;
+            bottom: 5px;
+            .ulPrincipalItem{
+                display: inline-block;
+                padding: 0.5rem;
+                text-decoration: none;
+            }
+        }
+        .ulSecundario{
+            display: flex;
+            justify-content: center;
+            bottom: 70px;
+            margin-right:  50px;
+            .ulSecundarioItem{
+                display: inline-block;
+                padding: 1rem;
+                text-decoration: none;
+            }                
+            
+        }
+            
+        /*ul{
+
+        }
+            li {
+
+            }*/
+                a{
+                    text-decoration: none;
+                    list-style: none;
+            
+                }
+            
+}
