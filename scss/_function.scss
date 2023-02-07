@@ -1,0 +1,14 @@
+//ancho del contenedor
+@function calc-container($grid: $grid) {
+    @return (map-get ($grid, ancho-col) + map-get ($grid, margen)) * map-get ($grid, cantidad-col);
+}
+
+//ancho de cada columna
+@function calc-col ($cantidad-col, $grid: $grid){
+    @return (map-get ($grid, ancho-col) * $cantidad-col) + (map-get ($grid, margen) * $cantidad-col) - map-get ($grid, margen);
+}
+
+//margen para cada columna
+@function calc-gutter ($gutter){
+    @return $gutter / 2;
+}

@@ -1,22 +1,27 @@
 @charset "UTF-8";
-#header {
-  background-color: #1413142c;
-  height: 30vh; }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@300&family=Playfair+Display:wght@500&family=Satisfy&display=swap");
+header {
+  background-color: white;
+  height: 350px; }
 
 .logo {
-  width: 200px;
+  width: 300px;
+  height: auto;
   position: relative;
   left: 40%;
-  right: 50%; }
+  right: 50%;
+  margin: 0;
+  padding: 0; }
 
 .navBar {
   display: flex;
   justify-content: space-evenly;
   font-size: larger;
-  font-size: 20px;
+  font-size: 28px;
   color: black;
   text-decoration: none;
   list-style: none;
+  /*padding-bottom: 100px;*/
   /*ul{
 
         }
@@ -24,9 +29,9 @@
 
             }*/ }
   .navBar .ulPrincipal {
-    position: relative;
-    left: 150px;
-    bottom: 5px; }
+    /*position: ;*/
+    left: 30px;
+    bottom: 50px; }
     .navBar .ulPrincipal .ulPrincipalItem {
       display: inline-block;
       padding: 0.5rem;
@@ -45,6 +50,14 @@
     list-style: none; }
 
 /*-- MAIN INDEX --*/
+main {
+  font-family: 'Noto Serif Telugu', serif;
+  background-color: rgba(238, 169, 169, 0.642);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
 .tituloPpal {
   display: flex;
   justify-items: center; }
@@ -55,13 +68,22 @@
 
 .ideaGeneral p {
   font-size: 30px;
-  margin: 50px; }
+  /*margin: $tamanio-px * 5;*/
+  display: flex;
+  flex-direction: row; }
   .ideaGeneral p .ideaTituloCel {
     font-size: 30px;
     margin: 100px; }
     .ideaGeneral p .ideaTituloCel .tituloPpal {
       display: flex;
-      justify-items: center; }
+      flex-direction: row; }
+      .ideaGeneral p .ideaTituloCel .tituloPpal h1 {
+        display: flex;
+        justify-items: center; }
+    .ideaGeneral p .ideaTituloCel .imagenesCelu {
+      margin-left: 300px;
+      display: flex;
+      justify-content: center; }
 
 .beneficios {
   font-size: 20px;
@@ -91,8 +113,8 @@
 
 /*--formulario de registro--*/
 .formulario {
-  background-color: rgba(241, 100, 100, 0.404);
-  border-radius: 3px;
+  background-color: #cbadad;
+  border-radius: 3px, solid black;
   color: #383838;
   padding: 10px;
   margin: 0 auto;
@@ -106,7 +128,7 @@
     display: flex;
     justify-content: center; }
     .formulario input .formControl {
-      border: solid 1px #acc;
+      border: solid 1px #768282;
       padding: 8px;
       margin-top: 6px;
       width: 470px; }
@@ -142,6 +164,25 @@
   font-size: 40px;
   margin-bottom: 20px; }
 
+.nos {
+  /*margin: 0 auto;*/
+  width: calc-container;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: 900; }
+  .nos:after {
+    clear: both;
+    content: '';
+    display: block; }
+  .nos section {
+    float: left;
+    margin: 0 calc-gutter(20px);
+    width: calc-col(4); }
+  .nos aside {
+    float: left;
+    margin: 0 calc-gutter(20px);
+    width: calc-col(2); }
+
 /*-- MAIN PLANES --*/
 .tituloPlanes {
   display: flex;
@@ -172,58 +213,71 @@
 
 /*-- FOOTER --*/
 .pie {
-  margin: 10px;
-  background-color: #1413142c;
+  width: 100%;
+  height: auto;
+  background-color: white;
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-top: 30px; }
   .pie .logoFooter {
     width: 200px;
     position: relative;
     display: flex;
-    flex-wrap: wrap; }
-  .pie .nosotros h3 a {
-    text-decoration: none;
-    color: black;
-    list-style: none;
-    font-size: 20px;
-    display: flex;
-    align-items: flex-start; }
-  .pie .nosotros ul li a {
-    text-decoration: none;
-    color: black;
-    list-style: none;
-    font-size: 20px;
-    display: flex;
-    align-items: flex-start; }
+    flex-wrap: wrap;
+    margin-left: 100px; }
+  .pie .nosotros h3 {
+    margin-left: 20px;
+    margin-top: 20px; }
+    .pie .nosotros h3 a {
+      text-decoration: none;
+      color: black;
+      list-style: none;
+      font-size: 20px;
+      display: flex;
+      align-items: flex-start;
+      margin-left: 100px; }
+  .pie .nosotros ul li {
+    margin-left: 100px; }
+    .pie .nosotros ul li a {
+      text-decoration: none;
+      color: black;
+      list-style: none;
+      font-size: 20px;
+      display: flex;
+      align-items: flex-start; }
   .pie .redes {
     width: 100%;
     height: auto; }
     .pie .redes h3 {
-      font-size: 20px; }
+      font-size: 20px;
+      margin-left: 100px; }
     .pie .redes a {
       width: 100%;
       height: auto;
       text-decoration: none;
-      color: black; }
+      color: black;
+      margin-left: 100px;
+      /*display: flex;
+            justify-content: space-between;
+            align-items: center;*/ }
       .pie .redes a img {
         width: 50px;
-        height: auto;
-        position: relative; }
+        height: auto; }
 
 /*--MEDIA QUERIES--*/
-@media screen and (max-width: 1200px) {
-  .ulPrincipal {
-    font-size: 18px; }
-  .ulSecundario {
-    font-size: 18px;
-    margin: 15px; } }
-
 @media (max-width: 1300px) and (min-width: 200px) {
   body {
     margin: auto; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1480px) {
+  header {
+    height: 400px; } }
+
+@media screen and (max-width: 1280px) {
+  .ulPrincipal {
+    font-size: 18px; }
   .ulSecundario {
     font-size: 18px;
     margin: 20px; } }

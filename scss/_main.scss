@@ -1,5 +1,12 @@
 /*-- MAIN INDEX --*/
-
+main{
+    font-family: 'Noto Serif Telugu', serif;
+    background-color: $color-main;
+    padding-top: $tamanio-px * 4;
+    padding-bottom: $tamanio-px * 3;
+    padding-left: $tamanio-px * 3;
+    padding-right: $tamanio-px * 3;
+}
 .tituloPpal{
     display: flex;
     justify-items: center;
@@ -12,15 +19,26 @@
 
 .ideaGeneral p{
     font-size:$tamanio-px * 3;
-    margin: $tamanio-px * 5;
+    /*margin: $tamanio-px * 5;*/
+    display: flex;
+    flex-direction: row;
     .ideaTituloCel{
         font-size: $tamanio-px * 3;
         margin: $tamanio-px * 10;
         .tituloPpal{
             display: flex;
-            justify-items: center;
+            flex-direction: row;
+            h1{
+                display: flex;
+                justify-items: center;    
+            }
+
         }
-        
+        .imagenesCelu{
+            margin-left: $tamanio-px * 30;
+            display: flex;
+            justify-content: center;
+        }
     }
     
 }
@@ -51,6 +69,7 @@
 /*--galeria Bodas--*/
 .galeriaBodas{
     .card{
+        
         &:hover{
             transform: scale(1.2);
         }
@@ -69,8 +88,8 @@
 }
 /*--formulario de registro--*/
 .formulario{
-    background-color: rgba(241, 100, 100, 0.404);
-    border-radius: 3px;
+    background-color: rgb(203, 173, 173);
+    border-radius: 3px, solid black;
     color: rgb(56, 56, 56);
     padding: $tamanio-px;
     margin: 0 auto;
@@ -85,7 +104,7 @@
         display: flex;
         justify-content: center;
         .formControl{
-            border: solid 1px #acc;
+            border: solid 1px rgb(118, 130, 130);
             padding: 8px;
             margin-top: 6px;
             width: $tamanio-px * 47;
@@ -142,7 +161,41 @@
     justify-content: center;
     font-size: $tamanio-px * 4;
     margin-bottom: $tamanio-px * 2;
+    
 }
+
+.nos {
+    /*margin: 0 auto;*/
+    width: calc-container ();
+    font-size: $tamanio-px * 2;
+    margin-left: $tamanio-px * 2;
+    font-weight: 900;
+
+
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+
+    section {
+        float: left;
+        margin: 0 calc-gutter(map-get($grid, margen));
+        width: calc-col(4);
+    }
+    
+    aside {
+        float: left;
+        margin: 0 calc-gutter(map-get($grid, margen));
+        width: calc-col(2);
+    
+    }
+}
+
+
+
+
+
 
 /*-- MAIN PLANES --*/
 .tituloPlanes{

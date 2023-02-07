@@ -1,27 +1,21 @@
 /*--MEDIA QUERIES--*/
-@media screen and (max-width: 1200px){
-    .ulPrincipal{
-        font-size: 18px;
-        
-    }
-    
-    .ulSecundario{
-        font-size: 18px;
-        margin: 15px;
-    
-    }
-
-}
-
-
 @media (max-width: 1300px) and (min-width: 200px){
     body{
         margin:auto
     }
 }
+@media screen and (max-width: 1480px){
+    header{
+        height: 400px;
+    }
+}
 
-
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1280px){
+    
+    .ulPrincipal{
+        font-size: 18px;
+        
+    }
     .ulSecundario{
         font-size: 18px;
         margin: 20px;
@@ -67,3 +61,4 @@
         image-resolution: 0;
     }
 }
+

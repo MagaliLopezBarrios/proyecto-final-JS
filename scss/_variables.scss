@@ -1,4 +1,11 @@
-$color-pagina: #1413142c;
+$color-pagina: white;
 $tamanio-px: 10px;
 $color-negro: black; 
+$color-main: rgba(238, 169, 169, 0.642); 
 
+$grid: (
+    cantidad-col: 2,
+    ancho-col: 30px,
+    margen: 20px,
+    container: 420px
+);

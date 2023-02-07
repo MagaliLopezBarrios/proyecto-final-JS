@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body{
+  font-family: 'Noto Serif Telugu', serif;
+  /*font-family: 'Playfair Display', serif;
+  font-family: 'Satisfy', cursive;*/
+}
 #header {
   background-color: #1413142c;
   height: 30vh logo;

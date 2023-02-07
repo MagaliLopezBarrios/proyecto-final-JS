@@ -1,20 +1,27 @@
 /*-- FOOTER --*/
 
 .pie{ 
-    margin: $tamanio-px;
+    width: 100%;
+    height: auto;
     background-color:$color-pagina ;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding-top: $tamanio-px * 3;
 
     .logoFooter {
         width: $tamanio-px * 20 ;
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        margin-left:$tamanio-px * 10 ;
     }
     .nosotros{
+        
         h3{
+            margin-left:$tamanio-px * 2 ;
+            margin-top: $tamanio-px * 2;
             a{
                 text-decoration: none;
                 color: $color-negro;
@@ -22,11 +29,12 @@
                 font-size: $tamanio-px * 2;
                 display: flex;
                 align-items: flex-start;
-                        
+                margin-left:$tamanio-px * 10 ;
             }
         }
         ul{
             li{
+                margin-left:$tamanio-px * 10 ;
                 a{
                     text-decoration: none;
                     color: $color-negro;
@@ -43,17 +51,22 @@
         height: auto;
         h3{
             font-size: $tamanio-px * 2;
+            margin-left:$tamanio-px * 10 ;
         }
         a{
             width: 100%;
             height: auto;    
             text-decoration: none;
             color: $color-negro;
+            margin-left:$tamanio-px * 10 ;
+            /*display: flex;
+            justify-content: space-between;
+            align-items: center;*/
+
                 
             img{
                 width: $tamanio-px * 5;
                 height: auto;
-                position: relative;
             
             }
         }
