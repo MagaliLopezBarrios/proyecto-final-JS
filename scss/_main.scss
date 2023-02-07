@@ -1,8 +1,16 @@
+/*--MAIN--*/
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+
 /*-- MAIN INDEX --*/
 main{
     font-family: 'Noto Serif Telugu', serif;
     background-color: $color-main;
-    padding-top: $tamanio-px * 4;
+    /*padding-top: $tamanio-px * 4;*/
     padding-bottom: $tamanio-px * 3;
     padding-left: $tamanio-px * 3;
     padding-right: $tamanio-px * 3;

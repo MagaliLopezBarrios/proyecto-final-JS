@@ -1,7 +1,10 @@
 /*--MEDIA QUERIES--*/
 @media (max-width: 1300px) and (min-width: 200px){
     body{
-        margin:auto
+        margin: 0%;
+    }
+    main{
+        padding-top: 2px;
     }
 }
 @media screen and (max-width: 1480px){
@@ -24,37 +27,51 @@
 }
 
 @media screen and (max-width: 830px){
-    .ulPrincipalItem{
-    padding: 0.2rem;
+    .navBar{
+    padding: 30px;
     }
 }
 
 
 @media screen and (max-width: 790px){
-    footer{
+    /*footer{
         width: 100%;
-    }
+    }*/
 }
 
 
 
 @media screen and (max-width: 786px){
-    .ulSecundario{
-        font-size: 18px;
-        margin: 10px;
+    .navBar{
+        font-size: 20px;
     
     }
 }
 
-@media screen and (max-width: 762px){
+
+@media screen and (max-width: 744px){
+
+    body{
+        width: 100%;
+        overflow: auto;
+    }
+    main{
+        margin: 0;
+        width: 100%;
+    }
     .redes img{
         display: flex;
         flex-direction: column;
     }
+
     
 }
 
 @media screen and (max-width: 470px){
+    header{
+        padding-bottom: 20px;
+    }
+    
     footer{
         width: 100%;
         padding: 0;

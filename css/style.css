@@ -1,5 +1,11 @@
 @charset "UTF-8";
+/*--HEADER--*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@300&family=Playfair+Display:wght@500&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 header {
   background-color: white;
   height: 350px; }
@@ -49,11 +55,17 @@ header {
     text-decoration: none;
     list-style: none; }
 
+/*--MAIN--*/
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
 /*-- MAIN INDEX --*/
 main {
   font-family: 'Noto Serif Telugu', serif;
   background-color: rgba(238, 169, 169, 0.642);
-  padding-top: 40px;
+  /*padding-top: $tamanio-px * 4;*/
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px; }
@@ -212,8 +224,13 @@ main {
   transform: scale(1.2); }
 
 /*-- FOOTER --*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .pie {
-  width: 100%;
+  /*width: 100%;*/
   height: auto;
   background-color: white;
   display: flex;
@@ -269,7 +286,9 @@ main {
 /*--MEDIA QUERIES--*/
 @media (max-width: 1300px) and (min-width: 200px) {
   body {
-    margin: auto; } }
+    margin: 0%; }
+  main {
+    padding-top: 2px; } }
 
 @media screen and (max-width: 1480px) {
   header {
@@ -283,24 +302,32 @@ main {
     margin: 20px; } }
 
 @media screen and (max-width: 830px) {
-  .ulPrincipalItem {
-    padding: 0.2rem; } }
+  .navBar {
+    padding: 30px; } }
 
 @media screen and (max-width: 790px) {
-  footer {
-    width: 100%; } }
+  /*footer{
+        width: 100%;
+    }*/ }
 
 @media screen and (max-width: 786px) {
-  .ulSecundario {
-    font-size: 18px;
-    margin: 10px; } }
+  .navBar {
+    font-size: 20px; } }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 744px) {
+  body {
+    width: 100%;
+    overflow: auto; }
+  main {
+    margin: 0;
+    width: 100%; }
   .redes img {
     display: flex;
     flex-direction: column; } }
 
 @media screen and (max-width: 470px) {
+  header {
+    padding-bottom: 20px; }
   footer {
     width: 100%;
     padding: 0;
