@@ -1,13 +1,16 @@
 /*--HEADER--*/
-* {
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}*/
+body{
+    width: 100%;
 }
 
 header{
     background-color: $color-pagina ;
-    height: 350px;
+    height: 100vh;
 }
     .logo{
         width: 300px;

@@ -6,9 +6,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  width: 100%; }
+
 header {
   background-color: white;
-  height: 350px; }
+  height: 100vh; }
 
 .logo {
   width: 300px;
@@ -61,11 +64,14 @@ header {
     padding: 0;
     box-sizing: border-box;
 }*/
+body {
+  width: 100%; }
+
 /*-- MAIN INDEX --*/
 main {
   font-family: 'Noto Serif Telugu', serif;
   background-color: rgba(238, 169, 169, 0.642);
-  /*padding-top: $tamanio-px * 4;*/
+  padding-top: 10px;
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px; }
@@ -76,7 +82,7 @@ main {
 
 .ideaTituloCel {
   font-size: 30px;
-  margin: 100px; }
+  margin: 30px; }
 
 .ideaGeneral p {
   font-size: 30px;
@@ -85,17 +91,24 @@ main {
   flex-direction: row; }
   .ideaGeneral p .ideaTituloCel {
     font-size: 30px;
-    margin: 100px; }
+    margin: 30px; }
     .ideaGeneral p .ideaTituloCel .tituloPpal {
       display: flex;
       flex-direction: row; }
       .ideaGeneral p .ideaTituloCel .tituloPpal h1 {
         display: flex;
         justify-items: center; }
+      .ideaGeneral p .ideaTituloCel .tituloPpal div img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; }
     .ideaGeneral p .ideaTituloCel .imagenesCelu {
-      margin-left: 300px;
-      display: flex;
-      justify-content: center; }
+      /*margin-left: $tamanio-px * 30;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;*/ }
 
 .beneficios {
   font-size: 20px;
@@ -229,6 +242,10 @@ main {
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  width: 100%;
+  height: 100vh; }
+
 .pie {
   /*width: 100%;*/
   height: auto;
@@ -285,14 +302,16 @@ main {
 
 /*--MEDIA QUERIES--*/
 @media (max-width: 1300px) and (min-width: 200px) {
-  body {
-    margin: 0%; }
-  main {
-    padding-top: 2px; } }
+  /* body{
+        margin: 0%;
+    }
+    main{
+        padding-top: 2px;
+    }*/ }
 
 @media screen and (max-width: 1480px) {
   header {
-    height: 400px; } }
+    height: 300px; } }
 
 @media screen and (max-width: 1280px) {
   .ulPrincipal {

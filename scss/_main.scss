@@ -4,13 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }*/
-
+body{
+    width: 100%;
+}
 
 /*-- MAIN INDEX --*/
 main{
     font-family: 'Noto Serif Telugu', serif;
     background-color: $color-main;
-    /*padding-top: $tamanio-px * 4;*/
+    padding-top: $tamanio-px ;
     padding-bottom: $tamanio-px * 3;
     padding-left: $tamanio-px * 3;
     padding-right: $tamanio-px * 3;
@@ -21,7 +23,7 @@ main{
 }
 .ideaTituloCel{
     font-size: $tamanio-px * 3;
-    margin: $tamanio-px * 10;
+    margin: $tamanio-px * 3;
 }
 
 
@@ -32,7 +34,7 @@ main{
     flex-direction: row;
     .ideaTituloCel{
         font-size: $tamanio-px * 3;
-        margin: $tamanio-px * 10;
+        margin: $tamanio-px * 3;
         .tituloPpal{
             display: flex;
             flex-direction: row;
@@ -40,12 +42,23 @@ main{
                 display: flex;
                 justify-items: center;    
             }
+            div{
+                img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+        
+                }
+            }
 
         }
-        .imagenesCelu{
-            margin-left: $tamanio-px * 30;
+        .imagenesCelu {
+            /*margin-left: $tamanio-px * 30;
             display: flex;
             justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;*/
         }
     }
     
