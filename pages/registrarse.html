@@ -40,6 +40,9 @@
                     <a class="ulPrincipalLink" style="color: black;" href="./registrarse.html">Registrarse</a>
                 </li>
             </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
         </nav>
 
 
@@ -48,21 +51,27 @@
     <main>
         <h1 class="tituloRegistrarse">Registrarse</h1>
 
-        <div>
-            <form class="formulario">
-                <p>Nombre:</p>
-                <input type="text" class= "formControl" placeholder="Escribe tu nombre"> <br/>
-                
-                <p>Apellido:</p>
-                <input type="text" class= "formControl" placeholder="Escribe tu apellido"> <br/>                   
-                
-                <p>Mail:</p>
-                <input type="text" class="formControl" placeholder="Escribe tu mail" id="mailInput" placeholder="Escribe tu mail"> <br/>                    
-                
-                <input type="button" value="Enviar" style="height: 30px; width: 400px; margin: 30px; border: solid 1px rgba(0, 0, 0, 0.562);" id="submitInput">
-            </form>
-        </div>
-
+        <section>
+            <div class="datosPersonales">
+                <div class="conteiner">
+                    <form class="row g-3">
+                        <div class="col-6">
+                            <label for="nombreInput" class="form-label">Nombre</label>
+                            <input type="text" class= "form-control" id="nombreInput" placeholder="Escribe tu nombre">
+                        </div>
+                        <div class="col-6">
+                            <label for="apellidoInput" class="form-label">Apellido</label>
+                            <input type="text" class= "form-control" id="apellidoInput" placeholder="Escribe tu apellido">                    
+                        </div>
+                        <div class="col-12">
+                            <label for="mailInput" class="form-label">"Mail"</label>
+                            <input type="text" class="form-control" placeholder="Escribe tu mail" id="mailInput" placeholder="Escribe tu mail">                    
+                        </div>
+                        <input type="button" value="Enviar" style="height: 50px; width: 220px; margin-left: 550px;" id="submitInput">
+                    </form>
+                </div>
+            </div>    
+        </section>
     </main>
 
 
