@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="invitaciones digitales- crealas con Tienes un mensaje">
     <meta name="keywords" content="on-line">
+
     <title>Tienes un mensaje-bodas</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/flavicon.png" type="image/png">
 
+    <script src="../index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 </head>
 <body>
+
     <header>
+        <div id="search">
+            <input type="text" placeholder="¿Qué estás buscando?" class="buscador">
+            <input type="image" id="searchbutton" src="../img/search.webp" class="searchbutton">
+        </div>
         <picture>
             <img class="logo" src="../img/logo_tum.webp" alt="logo tienes un mensaje">
         </picture>
@@ -48,138 +60,197 @@
     </header>
 
     <main>
+        
         <h1 class="inviBodas">Invitaciones para bodas</h1>
 
         <section class="galeriaBodas">
 
             <!--CARD "BODAS" con Boostrap-->
 
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
+            <div class="productos">
+                <div class="item">
+                    <div class="card h-100" id="1bo">
                         <img src="../img/bodas_1.webp" class="card-img-top" alt="Boda1">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:1</h5>
+                            <h3 class="card-title">Boda:1</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.0">100</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.0">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="2bo">
                         <img src="../img/bodas_2.webp" class="card-img-top" alt="Boda2">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:2</h5>
+                            <h3 class="card-title">Boda:2</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.1">110</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.1">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="3bo">
                         <img src="../img/bodas_3.webp" class="card-img-top" alt="Boda3">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:3</h5>
+                            <h3 class="card-title">Boda:3</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.2">120</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.2">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="4bo">
                         <img src="../img/bodas_4.webp" class="card-img-top" alt="Boda4">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:4</h5>
+                            <h3 class="card-title">Boda:4</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.3">130</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.3">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="5bo">
                         <img src="../img/bodas_5.webp" class="card-img-top" alt="Boda5">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:5</h5>
+                            <h3 class="card-title">Boda:5</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.4">100</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.4">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="6bo">
                         <img src="../img/bodas_6.webp" class="card-img-top" alt="Boda6">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:6</h5>
+                            <h3 class="card-title">Boda:6</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.5">100</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.5">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="7bo">
                         <img src="../img/bodas_7.webp" class="card-img-top" alt="Boda7">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:7</h5>
+                            <h3 class="card-title">Boda:7</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.6">120</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.6">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="8bo">
                         <img src="../img/bodas_8.webp" class="card-img-top" alt="Boda8">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:8</h5>
+                            <h3 class="card-title">Boda:8</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.7">130</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.7">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="9bo">
                         <img src="../img/bodas_9.webp" class="card-img-top" alt="Boda9">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:9</h5>
+                            <h3 class="card-title">Boda:9</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.8">100</h4>
+                                div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.8">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="10bo">
                         <img src="../img/bodas_1.webp" class="card-img-top" alt="Boda10">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:10</h5>
+                            <h3 class="card-title">Boda:10</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.9">110</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.9">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="11bo">
                         <img src="../img/bodas_2.webp" class="card-img-top" alt="Boda11">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:11</h5>
+                            <h3 class="card-title">Boda:11</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.10">120</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.10">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
+                <div class="item">
+                    <div class="card h-100" id="12bo">
                         <img src="../img/bodas_3.webp" class="card-img-top" alt="Boda12">
                         <div class="card-body">
-                            <h5 class="card-title">Boda:12</h5>
+                            <h3 class="card-title">Boda:12</h3>
                             <p class="card-text">Personalizala como quieras!</p>
-                            <p class="button-compra"><button>Agregar al carrito</button></p>
+                            <h4>$</h4><h4 id="price.item.11">130</h4>
+                            <div>
+                                <input type="button" value="Comprar" class="buybutton">
+                                <input type="button" value="Agregar al carrito" class="buybutton" id="add.item.11">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </section>
+            <div class="carritofloat">
+                <div id="carrito_div">
+                    <div><h3>Carrito</h3><input type="button" value="Borrar carrito" class="clearbutton" id="carrito.clear"></div>
+                    <nav class="shownav" id="empty_carrito"><h4>Tu carrito está vacío</h4></nav>
+                </div>
+                <div>
+                    <nav class="hidenav" id="carrito_total"><h4 id="carrito_total_text">Total</h4></section>
+                </div>
+            </div>
 
+            <input type="image" id="botoncito" src="../img/pinkbutton.webp" class="carritotestbutton">
+
+        </section>
     </main>
 
     <footer class="pie">
@@ -203,6 +274,7 @@
         </div>
 
     </footer>
+    <script src="../index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
