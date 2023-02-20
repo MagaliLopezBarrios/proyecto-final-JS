@@ -1,9 +1,9 @@
 /*--MAIN--*/
-/** {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}*/
+}
 body{
     width: 100%;
 }
@@ -98,13 +98,28 @@ main{
 
 /*--galeria Bodas--*/
 .galeriaBodas{
-    .card{
-        
-        &:hover{
-            transform: scale(1.2);
+    .productos{
+        /*display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        gap: 20px;
+        grid-auto-rows: auto;*/
+
+        .item{
+            display: grid;
+            grid-template-columns: 1fr, 1fr, 1fr;
+            gap: 20px;
+            grid-auto-rows: auto;
+            .card{
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            
+            }
         }
-        
     }
+
+        
     
 }
 .buybutton, .formbutton, .clearbutton {

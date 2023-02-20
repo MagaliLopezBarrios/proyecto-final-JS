@@ -1,4 +1,4 @@
-   //FORMULARIO PAGINA "REGISTRARSE" (reemplaza a los "prompt usados en la entrega anterior para el registro")
+//FORMULARIO PAGINA "REGISTRARSE" (reemplaza a los "prompt usados en la entrega anterior para el registro")
 let form=[];
 let submitbutton=document.getElementById("submitInput");
 let todook=1;
