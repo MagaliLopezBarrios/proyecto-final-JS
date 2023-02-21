@@ -44,10 +44,13 @@ function manejarSubmit(event){
     $buttonMailto.click()
 
 }
+
+
 //CARRITO DE COMPRAS
 
 /* AÑADIMOS UN TIMEOUT PARA ESPERAR A QUE CARGUE LO MÁS ELEMENTAL LA PÁGINA */
 /* ESTO ES PARA QUE EL JS NO INICIE CON LA PÁGINA AÚN VACÍA Y ASÍ EVITAR ERRORES */
+
 window.setTimeout( function() {
     /* DECLARAMOS LAS VARIABLES A UTILIZAR */
     let add_carrito=[];
@@ -69,10 +72,10 @@ document.getElementById("carrito.clear").onclick = () => {
         for(const delnumber in counter_carrito){
             (parseInt(counter_carrito[delnumber].sum) != 0) && document.getElementById("item_carrito_"+delnumber).remove();  /* USO DE OPERADOR LÓGICO */
             }
-            counter_carrito[delnumber].sum=0;
+            counter_carrito[delnumber].sum = 0 ;
             total=0;
         }
-    }
+    
     
 /* AQUÍ TRAEMOS LOS PRODUCTOS QUE SE ENCUENTRAN EN EL HTML HACIA UNA VARIABLE */
 
@@ -194,5 +197,4 @@ setInterval( () => {
         .then((json) => { placeholder.innerHTML = json[k].title; (k<99) ? k++ : k=0; }); 
 }, 1000)
 
-, 500;
-
+}, 500)
