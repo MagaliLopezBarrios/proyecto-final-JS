@@ -111,12 +111,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap; }
-    .ideaGeneral p .ideaTituloCel .imagenesCelu {
-      /*margin-left: $tamanio-px * 30;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;*/ }
+    
 
 .beneficios {
   font-size: 20px;
@@ -134,26 +129,37 @@ main {
   margin-bottom: 20px; }
 
 /*--galeria Bodas--*/
-.galeriaBodas .productos {
-  /*display: grid;
+/*.galeriaBodas{
+    /*.productos{
+        /*display: grid;
         grid-template-columns: 1fr, 1fr, 1fr;
         gap: 20px;
-        grid-auto-rows: auto;*/ }
-  .galeriaBodas .productos .item {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    gap: 20px;
-    grid-auto-rows: auto; }
-    .galeriaBodas .productos .item .card:hover {
-      transform: scale(1.1); }
+        grid-auto-rows: auto;*/
+/*.item{
+            display: grid;
+            grid-template-columns: 1fr, 1fr, 1fr;
+            gap: 20px;
+            grid-auto-rows: auto;
+            .card{
 
+                &:hover{
+                    transform: scale(1.1);
+                }
+            
+            }
+        }
+    }
+
+        
+    
+}*/
 .buybutton, .formbutton, .clearbutton {
   font-family: Oswald, sans-serif;
   font-size: 16px;
   border-style: solid;
   color: white;
-  background-color: #eb91f5;
-  border-color: #dd48eef2;
+  background-color: #e2afe8;
+  border-color: #e185ebf2;
   border-radius: 16px;
   padding: 0px 8px 0px 8px;
   height: 32px;

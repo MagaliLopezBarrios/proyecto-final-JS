@@ -6,11 +6,9 @@ body{
 }
 #header {
   background-color: #1413142c;
-  height: 30vh logo;
-    height-width: 200px;
-    height-position: relative;
-    height-left: 40%;
-    height-right: 50%; }
+  height: 30vh;
+    
+}
 
 .navBar {
   display: flex;
@@ -159,15 +157,17 @@ body{
 
 /*-- FOOTER --*/
 .pie {
-  margin: 10px;
-  background-color: #1413141c;
-  display: flex;
-  justify-content: space-around;
-  align-items: center logoFooter;
-    align-items-width: 200px;
-    align-items-position: relative;
-    align-items-display: flex;
-    align-items-flex-wrap: wrap; }
+    margin: 10px;
+    background-color: #1413141c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}  
+  .logoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: 200px;
+    align-items: relative; }
   .pie .nosotros h3 a {
     text-decoration: none;
     color: black;

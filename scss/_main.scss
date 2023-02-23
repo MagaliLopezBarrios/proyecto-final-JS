@@ -63,11 +63,11 @@ main{
 
         }
         .imagenesCelu {
-            /*margin-left: $tamanio-px * 30;
+            margin-left: $tamanio-px * 30;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;*/
+            flex-wrap: wrap;
         }
     }
     
@@ -97,14 +97,14 @@ main{
 
 
 /*--galeria Bodas--*/
-.galeriaBodas{
-    .productos{
+/*.galeriaBodas{
+    /*.productos{
         /*display: grid;
         grid-template-columns: 1fr, 1fr, 1fr;
         gap: 20px;
         grid-auto-rows: auto;*/
 
-        .item{
+        /*.item{
             display: grid;
             grid-template-columns: 1fr, 1fr, 1fr;
             gap: 20px;
@@ -121,96 +121,15 @@ main{
 
         
     
-}
-.buybutton, .formbutton, .clearbutton {
-    font-family: Oswald, sans-serif;
-    font-size: 16px;
-    border-style: solid;
-    color: white;
-    background-color: #eb91f5;
-    border-color: #dd48eef2;
-    border-radius: 16px;
-    padding: 0px 8px 0px 8px;
-    height: 32px;
-    margin-bottom: 24px;
-    margin-top: 20px;
-}
-.clearbutton{
-    margin-bottom: 10px;
-}
+}*/
 
-.carritofloat{
-    width: 300px;
-    bottom: 40px;
-    right: 20px;
-    margin-top: 30px;
-}
 
-.carritotestbutton{
-    width: 60px;
-    bottom: 40px;
-    right: 340px;
 
-}
-
-.carritofloat div div{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #eb91f5;
-    border-color: #de48ee;
-    text-align: center;
-}
-
-.carritofloat div div h3{
-    padding-top: 8px;
-    padding-bottom: 10px;
-    color: #ffffff;
-    text-shadow: 2px 2px #000000;
-}
-
-.carritofloat div nav{
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-
-.carritofloat div nav h4{
-    padding: 18px 0px 20px 20px;
-}
 
 .formbutton {
     margin: 12px 0px 12px 0px;
 }
-.item {
-    margin: 0px 24px 56px 24px;
-    padding: 12px 12px 0px 12px;
-    background-color: white;
-    border-radius: 15px;
-}
 
-#place_holder{
-    top: 8px;
-    left: 8px;
-}
-
-.productos {
-    margin-top: 24px;
-    margin-bottom: -12px;
-}
-
-.searchbutton {
-    height: 24px;
-    width: 24px;
-}
-
-.shownav{
-    display: block;
-}
-
-.hidenav{
-    display: none;
-}
 
 
 
